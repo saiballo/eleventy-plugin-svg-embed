@@ -5,7 +5,7 @@
 * Created: 07/12/2024 (18:41:03)
 * Created by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
-* Last update: 15/12/2024 (19:20:47)
+* Last update: 22/12/2024 (18:08:23)
 * Updated by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
 * Copyleft: 2024 - Tutti i diritti riservati
@@ -19,6 +19,11 @@ const cheerio = require("cheerio");
 const toLog = require("./log.js");
 const util = require("./utils.js");
 
+/**
+ * The function `getSvg` adds a shortcode `svgImg` to Eleventy configuration for embedding or displaying SVG images with specified attributes and error handling.
+ * @param eleventyconfig - it is an object that contains configuration settings for the Eleventy static site generator
+ * @param pluginconfig - it is an object containing configuration options for the plugin
+ */
 const getSvg = (eleventyconfig, pluginconfig) => {
 
 	eleventyconfig.addShortcode("svgImg", (src, classlist = "", customdata = {}) => {

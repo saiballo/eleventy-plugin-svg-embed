@@ -65,15 +65,23 @@ In your template you can add a shortcut (example is for Nunjucks);
 For every image you can add some data (i.e. accessibility)
 
 ```js
-{% svgImg "path/to/your/image/logo", "css-class another-css-class", {embed: true, title: "svg title", desc: "svg desc", size:[500,500]}  %}
+{% svgImg "path/to/your/image/logo", "css-class another-css-class", {embed: true, title: "svg title", desc: "svg desc", size:[500,500], stroke: "grey", fill: [["#ff0000", "#999"], ["#19450E", "#333"]], "stroke-width": [[2,1]] }  %}
 ```
 
-As you can see you can add css class list as second parameter of the shortcut. The third parameter is a object with which you can customize (all keys are optionals):
+As you can see you can add css class list as second parameter of the shortcut.
 
-- embed: overwrite the embed option in plugin config
-- title: for accessibility purposes you can provide a title
-- desc: for accessibility purposes you can provide a desc
-- size: an array for width and height of the image (or you can provide only one dimension for both. i.e. [100])
+The third parameter is a object with which you can customize some data and colors too (all keys are optionals):
+
+- **embed**: overwrite the embed option in plugin config
+- **title**: for accessibility purposes you can provide a title
+- **desc**: for accessibility purposes you can provide a desc
+- **size**: an array for width and height of the image (or you can provide only one dimension for both. i.e. [100])
+- **stroke**: you can provide one value (named or hex code) or an array. In the first case, all the "stroke" attributes found in the paths will be replaced. In the second case, the first value of each array will be searched in the "stroke" attributes and replaced with the second value of the same array.
+- **fill**: you can provide one value (named or hex code) or an array. In the first case, all the "fill" attributes found in the paths will be replaced. In the second case, the first value of each array will be searched in the "fill" attributes and replaced with the second value of the same array.
+
+## Changelog
+### 1.0.1
+- Added support for the color attributes stroke, fill, and stroke-width
 
 ## Team ARMADA 429
 <img src="https://raw.githubusercontent.com/saiballo/saiballo/refs/heads/master/armada429.png" width="100" height="100">

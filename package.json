@@ -1,6 +1,6 @@
 {
 	"name": "@saiballo/eleventy-plugin-svg-embed",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A plugin for 11ty that, through a shortcut, allows you to include an SVG image either as an embed or as a file",
 	"main": "main.js",
 	"keywords": [
