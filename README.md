@@ -78,6 +78,7 @@ The third parameter is a object with which you can customize some data and color
 - **size**: an array for width and height of the image (or you can provide only one dimension for both. i.e. [100])
 - **stroke**: you can provide one value (named or hex code) or an array. In the first case, all the "stroke" attributes found in the paths will be replaced. In the second case, the first value of each array will be searched in the "stroke" attributes and replaced with the second value of the same array.
 - **fill**: you can provide one value (named or hex code) or an array. In the first case, all the "fill" attributes found in the paths will be replaced. In the second case, the first value of each array will be searched in the "fill" attributes and replaced with the second value of the same array.
+- **stroke-width**: you can provide one value or an array. In the first case, all the "stroke-width" attributes found in the paths will be replaced. In the second case, the first value of each array will be searched in the "stroke-width" attributes and replaced with the second value of the same array.
 
 ## Changelog
 ### 1.0.1
