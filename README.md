@@ -45,7 +45,7 @@ module.exports =  function(eleventyConfig) {
 #### Parameters
 ```js
 // set this to true if you want to include file extension is shortcut code
-"includeExt": false,
+"includeExt": false
 
 // true | false. if set to "true", the code will be embedded in the page; otherwise, the img src tag will be used
 "embed":  true
@@ -56,7 +56,7 @@ module.exports =  function(eleventyConfig) {
 
 ## Usage
 
-In your template you can add a shortcut (example is for Nunjucks);
+In your template you can add a shortcut (the example below is for Nunjucks):
 
 ```js
 {% svgImg "path/to/your/image/logo" %}
