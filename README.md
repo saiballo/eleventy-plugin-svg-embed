@@ -15,7 +15,7 @@
 Available on [npm](https://www.npmjs.com/package/@saiballo/eleventy-plugin-svg-embed):
 
 ```sh
-npm install @saiballo/eleventy-plugin-svg-embed --save
+npm install @saiballo/eleventy-plugin-svg-embed --save-dev
 ```
 Add the plugin to your `eleventy.config.js`:
 
